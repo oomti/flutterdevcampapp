@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
         textTheme: TextTheme(
           caption: TextStyle(
               color: AppConstants.hexToColor(
-                  AppConstants.appPrimaryFontColorWhite)),
+                  AppConstants.appPrimaryTileColor)),
         ),
       ),
       home: const MyHomePage(title: 'FlutterDevcamp - 2022 - Welcome'),
@@ -126,8 +126,8 @@ class _MyHomePageState extends State<MyHomePage> {
             style: Theme.of(context).textTheme.headline5,
           ),
           Text(
-            currentDay == _counter ? "🪙" : "$_counter times ",
-            style: Theme.of(context).textTheme.headline2,
+            currentDay == _counter ? "🪙🪙🪙🪙" : "$_counter times ",
+            style: Theme.of(context).textTheme.headline2
           ),
           Padding(
             padding: const EdgeInsets.all(8.0),
